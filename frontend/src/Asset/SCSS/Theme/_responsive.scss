@@ -1,0 +1,59 @@
+@media screen and (max-width: 768px) {
+  .header {
+    .navbar {
+      .navbar-nav {
+        align-items: baseline;
+        .nav-item {
+          margin-bottom: 10px;
+          width: $w-100;
+          &.button {
+            width: $w-100;
+          }
+        }
+      }
+    }
+  }
+  // .header,
+  // .intro,
+  // .carousel,
+  // .myCategories,
+  // .course_detail_header,
+  // .course_detail_body,
+  // .myCourse,
+  // .myStudent,
+  // .myOpinion,
+  // .footer {
+  //   width: 100%;
+  //   margin: auto;
+  // }
+}
+// @media screen and (max-width: 992px) {
+//   .header,
+//   .intro,
+//   .carousel,
+//   .myCategories,
+//   .course_detail_header,
+//   .course_detail_body,
+//   .myCourse,
+//   .myStudent,
+//   .myOpinion,
+//   .footer {
+//     width: 100%;
+//     margin: auto;
+//   }
+// }
+// @media screen and (max-width: 1400px) {
+//   .header,
+//   .intro,
+//   .carousel,
+//   .myCategories,
+//   .course_detail_header,
+//   .course_detail_body,
+//   .myCourse,
+//   .myStudent,
+//   .myOpinion,
+//   .footer {
+//     width: 100%;
+//     margin: auto;
+//   }
+// }

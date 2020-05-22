@@ -1,0 +1,118 @@
+$color-black-0: #29303b;
+$color-black-1: #24292e;
+$color-white-0: #fff;
+$color-red-0: #ec5252;
+$color-red-1: #521822;
+$color-red-2: #cd3d30;
+$color-purple: #6e1a52;
+$color-gray-1: rgba(20, 23, 28, 0.05);
+$color-gray-2: #a1a7b3;
+$color-gray-3: #cacbcc;
+$color-gray-4: #686f7a;
+$color-gray-5: #f7f8fa;
+$color-black-light: #505763;
+$color-white-cream: #f2f3f5;
+$color-black-dark: rgba(20, 24, 28, 0.1);
+$color-yellow: #f4c150;
+$color-blue: #007791;
+$color-blue-facebook: #385898;
+$color-blue-linkedin: #0077b5;
+$color-orange-0: #fd9644;
+$color-instagram: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+
+$fs-0: 1rem;
+$fs-1: 0.8rem;
+$fs-2: 1.5rem;
+$fs-3: 1.7rem;
+$fs-4: 2.1rem;
+
+$fw-normal: normal;
+$fw-bold-0: 600;
+$fw-bold-1: 700;
+$fw-bold: bold;
+
+// line height
+$line-height: 1.43;
+
+// margin
+$mg-0: 2px;
+$mg-1: 10px;
+$mg-2: 25px;
+$mg-3: 35px;
+
+// border-radius
+$border-radius-1: 2px;
+$border-radius-2: 50%;
+$border-radius-3: 20px;
+
+// border
+// $border-1: 1px solid @
+
+// padding
+$pd-0: 5px;
+$pd-1: 10px;
+$pd-2: 15px;
+$pd-3: 20px;
+$pd-4: 25px;
+
+// width
+$w-100: 100%;
+
+// breakpoint
+$breakpoints: (
+  'extra-large': 1200px,
+  'large': 992px,
+  'medium': 768px,
+  'small': 576px,
+);
+
+@mixin text($color, $fs, $fw) {
+  color: $color;
+
+  font-size: $fs;
+  font-weight: $fw;
+  word-spacing: 1px;
+}
+
+@mixin button($color, $bg-color, $border-color, $fw, $bg-color-hover) {
+  color: $color;
+  background: $bg-color;
+
+  border: 1px solid $border-color;
+  font-weight: $fw;
+  &:hover {
+    background: $bg-color-hover;
+  }
+}
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($map: $breakpoints, $key: $breakpoint) {
+    $value: map-get(
+      $map: $breakpoints,
+      $key: $breakpoint,
+    );
+    @media screen and (max-width: $value) {
+      @content;
+    }
+  }
+}
+
+// // new mixin for border
+// @mixin borderColor($number){
+//   if(@number == 1) {
+
+//   }
+// }
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// body {
+//   font-family: Arial, Helvetica, sans-serif;
+//   font-size: $fs-0;
+//   color: $color-black-0;
+//   background: $color-white-0;
+//   line-height: $line-height;
+// }

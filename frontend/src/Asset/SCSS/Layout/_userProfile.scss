@@ -1,0 +1,104 @@
+.user-detail {
+  .top-user {
+    width: 100%;
+    height: 330px;
+    padding-top: 40px;
+    background: $color-red-0;
+    .user-avatar {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto;
+      .ava {
+        width: $w-100;
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+    p {
+      @include text($color-white-0, $fs-4, $fw-bold);
+      height: 50px;
+      line-height: 75px;
+    }
+    .social-list {
+      margin-top: $mg-3;
+      ul {
+        text-align: center;
+        li {
+          display: inline;
+          list-style: none;
+          padding: 1rem;
+          transition: all 0.5s;
+          a {
+            text-decoration: none;
+            border: 1px solid $color-white-0;
+            border-radius: 50%;
+            padding: 1rem;
+            background: white;
+            font-size: $fs-2;
+            transition: all 0.5s;
+          }
+          &.fb {
+            &:hover {
+              a {
+                background: $color-blue-facebook;
+                color: $color-white-0;
+              }
+            }
+          }
+          &.tw {
+            a {
+              background: $color-white-0;
+              color: $color-blue;
+            }
+            &:hover {
+              a {
+                background: $color-blue;
+                color: $color-white-0;
+              }
+            }
+          }
+          &.lin {
+            a {
+              color: $color-blue-linkedin;
+            }
+            &:hover {
+              a {
+                background: $color-blue-linkedin;
+                color: $color-white-0;
+              }
+            }
+          }
+          &.ins {
+            a {
+              color: $color-instagram;
+            }
+            &:hover {
+              a {
+                background: $color-instagram;
+                color: $color-white-0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .more-info {
+    margin-top: $mg-3;
+    .row {
+      .col-3 {
+        .nav {
+          &.nav-pills {
+            .nav-link {
+              color: $color-black-0;
+              &.active {
+                background: $color-red-0;
+                color: $color-white-0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

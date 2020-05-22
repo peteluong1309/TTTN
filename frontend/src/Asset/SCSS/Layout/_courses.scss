@@ -1,0 +1,92 @@
+.myCourse {
+  margin-top: $mg-2;
+  // width: 1536px;
+  // margin: auto;
+  .course_content {
+    width: 80%;
+    margin: auto;
+    .course_intro {
+      h2 {
+        @include text($color-black-0, $fs-4 - 4, $fw-normal);
+      }
+    }
+
+    .myTab {
+      .nav {
+        justify-content: space-between;
+        border: none;
+        .nav-item {
+          &:hover {
+            .nav-link {
+              border: none;
+            }
+          }
+          .nav-link {
+            &.active {
+              border: none;
+              border-bottom: 5px solid $color-blue;
+            }
+          }
+          .nav-link {
+            @include text($color-black-0, $fs-0, $fw-normal);
+            border: none;
+          }
+        }
+      }
+
+      .tab-content {
+        margin-top: 2px;
+        position: relative;
+        .tab-pane {
+          .slick-slider {
+            .slick-arrow {
+              color: $color-red-0;
+              z-index: 99999;
+              &.slick-next:before,
+              &.slick-prev::before {
+                color: $color-red-0;
+                font-size: $fs-2;
+              }
+              &.slick-disabled::before {
+                opacity: 0;
+              }
+            }
+            .slick-list {
+              margin: 0 -9px;
+              .slick-track {
+                .slick-slide {
+                  padding: 0 9px;
+                  div {
+                    .card {
+                      .card-body {
+                        .card-title {
+                          height: 1.2rem;
+                          @include text($color-black-0, $fs-0, $fw-bold);
+                        }
+                        .card-text {
+                          @include text($color-gray-4, $fs-1, $fw-normal);
+                        }
+                        .button {
+                          .btn {
+                            outline: none;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.text-with-dots {
+  display: block;
+  max-width: 98%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}

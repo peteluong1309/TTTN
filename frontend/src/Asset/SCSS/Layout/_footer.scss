@@ -1,0 +1,30 @@
+.footer {
+  border-top: 1px solid $color-gray-3;
+  height: 100px;
+  // width: 1536px;
+  // margin: auto;
+  .row {
+    .col-12 {
+      line-height: 5;
+      a {
+        img {
+          width: 100px;
+        }
+      }
+      &.footer_term {
+        text-align: right;
+        ul {
+          list-style-type: none;
+          li {
+            display: inline;
+            padding-right: $pd-2;
+            a {
+              text-decoration: none;
+              color: $color-gray-2;
+            }
+          }
+        }
+      }
+    }
+  }
+}

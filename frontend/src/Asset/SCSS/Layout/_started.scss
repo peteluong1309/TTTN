@@ -1,0 +1,29 @@
+.myStarted{
+    margin-bottom: $mg-2;
+    height: 300px;
+    background: $color-black-0;
+    border-top: 5px solid $color-red-0;
+    .started_content{
+        width: 80%;
+        margin: auto;
+        color: $color-white-0;
+        //line-height: 300px;
+        text-align: center;
+        transform: translateY(70%);
+        a{
+            button{
+                @include text($color-white-0, $fs-0, $fw-bold-0);
+                margin-top: $mg-2;
+                padding: $pd-1;
+                border: none;
+                background: $color-red-0;
+                
+            }
+            &:hover{
+                button{
+                    background: $color-red-1;
+                }
+            }
+        }
+    }
+}
